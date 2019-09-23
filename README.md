@@ -12,6 +12,6 @@ $('#submit').click();
 ```
 
 ### To-Do
-Turn it into Extension. 
-Add options for All Ratings. 
-Add Single-click option for submitting all feedbacks from any URL of Flex.
+* Turn it into Chrome Extension. 
+* Add options for All Ratings. 
+* Add Single-click option for submitting all feedbacks from any URL of Flex.
