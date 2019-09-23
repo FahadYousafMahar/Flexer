@@ -3,7 +3,7 @@ One-Click Submission of FLEX Feedback for FAST-NUCES ( National University of Co
 
 ### Usage
 1) Open [Flex Feedback Page](http://flexstudent.nu.edu.pk/Student/CourseFeedback) where Radio buttons are located.
-2) Open Developer's Console (Ctrl+Shift+I) and paste following code:
+2) Open Developer's Console (Ctrl+Shift+I), paste following code and press [Enter]:
 
 ```
 $('label:contains("Strongly Agree")').find('input').prop("checked",true);
