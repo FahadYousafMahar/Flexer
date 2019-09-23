@@ -11,6 +11,9 @@ $('label:contains("Yes")').find('input').prop("checked",true);
 $('#submit').click();
 ```
 
+![Image of Flexer](flexer.png)
+
+
 ### To-Do
 * Turn it into Chrome Extension. 
 * Add options for All Ratings. 
