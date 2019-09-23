@@ -10,11 +10,10 @@ $('label:contains("Yes")').find('input').prop("checked",true);
 $('#submit').click();
 ```
 ![Image How To Use](howtouse.png)
-___
 ![Image of Flexer](flexer.png)
 
 
 ### To-Do
-- [x] Turn it into Chrome Extension. 
-- [x] Add options for All Ratings. 
-- [x] Add Single-click option for submitting all feedbacks from any URL of Flex.
+- [] Turn it into Chrome Extension. 
+- [] Add options for All Ratings. 
+- [] Add Single-click option for submitting all feedbacks from any URL of Flex.
