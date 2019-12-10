@@ -4,7 +4,7 @@
   <img width="460" height="300" src="./media/440.png">
 </p>
 <hr/>
-##### One-Click Submission of FLEX Feedback for FAST-NUCES ( National University of Computer and Emerging Sciences )
+<b><p align="center"> One-Click Submission of FLEX Feedback for FAST-NUCES ( National University of Computer and Emerging Sciences ) <p></b>
 
 ### Usage
 1) [Download Extension From Chrome Webstore]()
