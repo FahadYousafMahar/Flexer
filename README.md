@@ -4,7 +4,7 @@
   <img width="460" height="300" src="./media/440.png">
 </p>
 <hr/>
-Feedback Submission Bot
+Flex Feedback Submission Bot
 
 ### Usage
 1) [Download Extension From Chrome Webstore]()
