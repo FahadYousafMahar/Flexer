@@ -1,19 +1,22 @@
-# Flexer
+<h1 align="center">Flexer</p>
+<p align="center">
+  <img width="460" height="300" src="./media/440.png">
+</p>
+
 One-Click Submission of FLEX Feedback for FAST-NUCES ( National University of Computer and Emerging Sciences )
 
 ### Usage
-1) Open [Flex Feedback Page](http://flexstudent.nu.edu.pk/Student/CourseFeedback) where Radio buttons are located.
-2) Open Developer's Console (Ctrl+Shift+I), paste following code and press [Enter]:
-```javascript
-$('label:contains("Strongly Agree")').find('input').prop("checked",true);
-$('label:contains("Yes")').find('input').prop("checked",true);
-$('#submit').click();
-```
-![Image How To Use](howtouse.png)
-![Image of Flexer](flexer.png)
+1) [Download Extension From Chrome Webstore]()
+2) [Open Course Feedback Page](http://flexstudent.nu.edu.pk/Student/CourseFeedback)
+3) Follow the prompts
+
+### Screenshots
+ <img src="./media/1.png" style="padding: 2px;border: 2px solid white;box-shadow: 1px 8px 20px 0px black;"> 
+ <img src="./media/2.png" style="padding: 2px;border: 2px solid white;box-shadow: 1px 8px 20px 0px black;">
+
 
 
 ### To-Do
-- [ ] Turn it into Chrome Extension. 
-- [ ] Add options for All Ratings. 
+- [X] Turn it into Chrome Extension. 
+- [X] Add options for All Ratings. 
 - [ ] Add Single-click option for submitting all feedbacks from any URL of Flex.
