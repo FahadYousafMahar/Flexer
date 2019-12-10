@@ -1,9 +1,11 @@
 <h1 align="center">Flexer</p>
+<hr>
 <p align="center">
   <img width="460" height="300" src="./media/440.png">
 </p>
-
+<hr>
 ##### One-Click Submission of FLEX Feedback for FAST-NUCES ( National University of Computer and Emerging Sciences )
+<hr>
 
 ### Usage
 1) [Download Extension From Chrome Webstore]()
