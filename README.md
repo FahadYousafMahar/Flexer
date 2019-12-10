@@ -4,8 +4,8 @@
   <img width="460" height="300" src="./media/440.png">
 </p>
 <hr/>
-<b><p align="center"> One-Click Submission of FLEX Feedback for FAST-NUCES ( National University of Computer and Emerging Sciences ) <p></b>
-
+Feedback Submission Bot
+One-Click Submission of FLEX Feedback for FAST-NUCES ( National University of Computer and Emerging Sciences ) 
 ### Usage
 1) [Download Extension From Chrome Webstore]()
 2) [Open Course Feedback Page](http://flexstudent.nu.edu.pk/Student/CourseFeedback)
