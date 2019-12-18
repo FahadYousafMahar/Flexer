@@ -7,7 +7,7 @@
 Flex Feedback Submission Bot
 
 ### Usage
-1) [Download Extension From Chrome Webstore]()
+1) [Download Extension From Chrome Webstore](https://chrome.google.com/webstore/detail/flexer-feedback-submitter/eefoegmehkeabdoccnglipkcagncddia)
 2) [Open Course Feedback Page](http://flexstudent.nu.edu.pk/Student/CourseFeedback)
 3) Follow the prompts
 
@@ -20,4 +20,4 @@ Flex Feedback Submission Bot
 ### To-Do
 - [X] Turn it into Chrome Extension. 
 - [X] Add options for All Ratings. 
-- [ ] Add Single-click option for submitting all feedbacks from any URL of Flex.
+- [ ] Add Single-click option for submittineedbacks from any URL of Flexg all feedbacks from any URL of Flex.
