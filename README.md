@@ -1,4 +1,5 @@
-<h1 align="center">Flexer</p>
+<h1 align="center">Flexer</h1>
+<p>A chrome extension for autosubmission of Fast Flex Feedback @ flexstudent.nu.edu.pk</p>
 <hr>
 <p align="center">
   <img width="460" height="300" src="./media/440.png">
