@@ -15,19 +15,24 @@ $(document).ready(function() {
     const fillButton = $("#fillSelected");
     const selectAllBtn = $("#selectAll");
     
+    statusSection.text("Loading courses...");
+    
     // Get active tab and request course list
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         const tab = tabs[0];
-        if (tab && tab.url && tab.url.includes("flexstudent.nu.edu.pk/Student/CourseFeedback")) {
-            statusSection.text("Loading courses...");
+        if (!tab) {
+            statusSection.text("No active tab found.");
+            return;
+        }
+        
+        chrome.tabs.sendMessage(tab.id, {action: "getCourses"}, function(response) {
+            if (chrome.runtime.lastError) {
+                statusSection.text("Open FLEX Course Feedback page and refresh, then try again.");
+                console.log("Error:", chrome.runtime.lastError.message);
+                return;
+            }
             
-            chrome.tabs.sendMessage(tab.id, {action: "getCourses"}, function(response) {
-                if (chrome.runtime.lastError) {
-                    statusSection.text("Please refresh the FLEX page and try again.");
-                    return;
-                }
-                
-                if (response && response.courses && response.courses.length > 0) {
+            if (response && response.courses && response.courses.length > 0) {
                     courseSection.show();
                     statusSection.text("");
                     
@@ -49,12 +54,9 @@ $(document).ready(function() {
                     });
                     
                 } else {
-                    statusSection.text("No pending feedback found.");
+                    statusSection.text("No pending feedback found. Make sure you're on the FLEX Course Feedback page.");
                 }
             });
-        } else {
-            statusSection.text("Open FLEX Course Feedback page to use this extension.");
-        }
     });
     
     // Select All toggle
