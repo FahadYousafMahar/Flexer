@@ -3,9 +3,10 @@
     "default_icon": "icons/icon128.png",
     "default_popup": "popup.html"
   },
+  "permissions": ["activeTab", "storage"],
   "content_scripts": [{
     "js": ["js/jquery.min.js", "js/sweetalert.min.js", "js/checkflex.js"],
-    "matches": ["*://flexstudent.nu.edu.pk/Student/CourseFeedback", "*://flexstudent.nu.edu.pk/Student/FeedBackQuestions", "*://flexstudent.com/*"]
+    "matches": ["*://flexstudent.nu.edu.pk/Student/CourseFeedback*", "*://flexstudent.nu.edu.pk/Student/FeedBackQuestions*", "*://flexstudent.com/*"]
   }],
   "description": "One-Click Submission of FLEX Feedback for FAST-NUCES ( National University of Computer and Emerging Sciences )",
   "icons": {
