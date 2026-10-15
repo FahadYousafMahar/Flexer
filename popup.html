@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<title>Popup</title>
+<head>
+<title>Flexer</title>
 
 <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
 <link rel='stylesheet prefetch' href='css/bootstrap.min.css'>
@@ -8,8 +9,19 @@
   integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 <link rel="stylesheet" href="css/popup.css">
-
-
+<style>
+  .course-list { max-height: 300px; overflow-y: auto; padding: 10px; }
+  .course-item { background: rgba(255,255,255,0.1); margin: 5px 0; padding: 10px; border-radius: 5px; display: flex; align-items: center; }
+  .course-item input { margin-right: 10px; }
+  .course-item label { color: white; font-family: Rajdhani; font-size: 14px; margin: 0; cursor: pointer; flex: 1; }
+  .btn-fill { background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; width: 100%; margin: 10px 0; font-family: Rajdhani; font-size: 16px; }
+  .btn-fill:hover { background: #45a049; }
+  .btn-fill:disabled { background: #666; cursor: not-allowed; }
+  .rating-select { margin: 10px 0; }
+  .rating-select select { width: 100%; padding: 8px; border-radius: 5px; font-family: Rajdhani; }
+  .status-msg { color: #ffc107; font-family: Rajdhani; text-align: center; padding: 10px; }
+  .select-all { color: #4CAF50; cursor: pointer; font-size: 12px; }
+</style>
 </head>
 
 <body>
@@ -18,13 +30,33 @@
       <h1>&nbsp;</h1>
     </div>
     <h4 class="text-center" align="center" style="color:White; font-family:Rajdhani;font-size: 24px;">Flexer - FeedBack Submitter</h4>
-    <h4 class="text-center" style="font-family:Arial;font-size:18px;color:#ffffff;">developed by</h4>
+    
+    <div id="course-section" style="display:none; padding: 0 15px;">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h5 style="color:white; font-family:Rajdhani;">Select Courses:</h5>
+        <span class="select-all" id="selectAll">Select All</span>
+      </div>
+      <div class="course-list" id="courseList"></div>
+      
+      <div class="rating-select">
+        <select id="ratingSelect">
+          <option value="5">5 Star - Strongly Agree</option>
+          <option value="4">4 Star - Agree</option>
+          <option value="3">3 Star - Uncertain</option>
+          <option value="2">2 Star - Dissatisfied</option>
+          <option value="1">1 Star - Strongly Disagree</option>
+        </select>
+      </div>
+      
+      <button class="btn-fill" id="fillSelected" disabled>Fill Selected Courses</button>
+    </div>
+    
+    <div id="status-section" class="status-msg"></div>
+    
+    <h4 class="text-center" style="font-family:Arial;font-size:14px;color:#ffffff;">developed by</h4>
     <a href="https://github.com/fahadyousafmahar/">
-      <h4 class="text-center" align="center" style="color:White; font-family:Rajdhani;font-size: 36px;">Fahad Yousaf
-        Mahar</h4>
+      <h4 class="text-center" align="center" style="color:White; font-family:Rajdhani;font-size: 24px;">Fahad Yousaf Mahar</h4>
     </a>
-    <h4 class="text-center" style="font-family:Rajdhani;color:#ffffff;font-size:24px;"><em>Full Stack Web Developer
-        <hr><a href="https://webit.pk">WebIT.pk Solutions</a></a></em></h4>
     <div class="foo text-center">
       <h4>
         <a class="foo" href="https://github.com/fahadyousafmahar/flexer" target="_blank"><i
@@ -35,7 +67,7 @@
             aria-hidden="true"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
         <a class="foo" href="https://www.instagram.com/fahadyousafmahar/" target="_blank"><i class="fa fa-instagram fa-2x"
             aria-hidden="true"></i></a>
-        </h4>
+      </h4>
     </div>
   </div>
   <script src='js/jquery.min.js'></script>
